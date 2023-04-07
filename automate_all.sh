@@ -5,6 +5,6 @@ for (( j=0; j<length; j++ ));
 do
     version=${versions[$j]}
     git checkout release-$version
-    make
+    make quick-release
     mv _output _output-$version
 done

@@ -1,5 +1,5 @@
 version=$1
 
 git checkout release-$version
-make
+make quick-release
 mv _output _output-$version
